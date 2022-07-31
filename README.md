@@ -1,3 +1,3 @@
-# Community Template Repo
+# This repo consist of 30 projects in 30 days
 
-Template repo with docs and GitHub Actions etc, to create other projects.
+The only tech stacks I'll use is HTML, CSS, Javascript - there's no in between
