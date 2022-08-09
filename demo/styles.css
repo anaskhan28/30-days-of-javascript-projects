@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.main-section{
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 0 0 0;
+    
+    
+    
+}
+
+.about-html{
+    border: 1px solid gray;
+    border-bottom: none;
+    
+}
+.about-puppie{
+    border: 1px solid gray;
+    border-bottom: none;
+    border-left: none;
+    display: inline;
+}
+.about-css{
+    border: 1px solid gray;
+    border-bottom: none;
+    border-left: none;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight:normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+p{
+    padding-left: 5px;
+    font-size:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100%;
+}
+
+
+.sub-section{
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    display: flex;
+    
+    
+    
+}
+.about-like{
+    border: 1px solid gray;
+    border-bottom: none;
+    flex-direction: column;
+    
+    
+}
+.news-type{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+   
+    background-color: red;
+}
+.politics{
+    color: aqua;
+    background-color:peru ;
+    
+}
