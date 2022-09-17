@@ -48,7 +48,16 @@ body{
 .button_small{
     padding: 0.3rem 1.5rem;
 }
-/* ---- banner styles */
+.cf:after,
+.cf:before{
+    content: " ";
+    display: table;
+}
+.cf:after{
+        clear: both;
+}
+
+/* ---------------- banner styles --------------- */
 #banner{
     background-image: url("./images/banner_background.jpg");
     background-position: center;
@@ -106,4 +115,45 @@ nav{
 }
 .button{
     margin: 0 .75rem;
+}
+
+/* ---------------- Services styles --------------- */
+
+#services{
+    background: var(--grey_background);
+    padding: 2rem 0 6.5rem 0;
+    position: relative;
+
+}
+.service{
+    background: var(--white);
+    width: 31%;
+    float: left;
+    margin: -5rem 1% 0 1%;
+    padding: 3rem 2.5%;
+    text-align: center;
+    position: relative;
+    box-shadow: 15px 15px 6px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    
+}
+.service_topic{
+    margin:0;
+    font-size: 1.5rem;
+    color: var(--dark_grey);
+}
+.about_service{
+    margin: 0 0 2rem 0;
+    color: var(--dark_grey);
+}
+.button{
+    margin: .5rem 2rem;
+}
+.service ::after{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    height: 50px;
+    border-right: 2px solid #666060;
 }
