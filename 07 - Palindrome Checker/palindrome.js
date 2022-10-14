@@ -4,7 +4,7 @@ let result = document.getElementById('result');
 button.addEventListener('click', ()=>{
     result.innerText="Loading...Please wait";
 
-    let timeout = setTimeout(()=>{
+   setTimeout(()=>{
         let input = document.getElementById('userInput').value;
         let reversed = input.split("").reverse().join("");
         if(reversed === input){
