@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
 body{
-    background: rgb(34,193,195);
-    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(45,105,253,1) 100%);
+    background: linear-gradient(90deg, #fdfcfb 0%, #e2d1c3 100%);
     position:relative;
     bottom:50px;
 
@@ -25,6 +24,7 @@ label{
     height:500px;
     flex-direction:column;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    
     
 }
  #container-2 button{
@@ -75,7 +75,8 @@ cursor:pointer;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
     transform:translate(580px,100px);
     font-family: Kenia, cursive;
-    cursor:pointer
+    cursor:pointer;
+
     
 }
 #container-1,#container-2{
