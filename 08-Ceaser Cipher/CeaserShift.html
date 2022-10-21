@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <div class="container-1">
-        <h1>Ceaser Cipher Encrypter</h1>
+    <div id="container-1">
+        <h1>Caesar Cipher Encryption and Decryption</h1>
+        <img id="caesar" src="https://www.seas.upenn.edu/~cis110/current/assets/img/misc/caesar.jpg" alt="Ceaser">
+    </div>
+
+    <div id="container-2">
+        <label><textarea type="text"id="plainInput-1" placeholder="Type in plain text"></textarea></label>
+        <button id="encrypt-btn">Encrypt</button>
+        <button id="copyToClipboard">Copy Text</button>
+        <input type="number" id="shiftInput" min="0" max="25">
+        <br>
+        <label >
+            <textarea type="text" id="encrptedInput-1" placeholder="Encrypted text will be appear here...."></textarea>
+        </label>
     </div>
 </body>
 </html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+
+
+body{
+    background:#004eb4;
+    position:relative;
+    bottom:50px;
+}
+label{
+    font-family: sans-serif;
+    color:black;
+    transform:scale(1.5);
+    position:relative;
+}
+#container-2{
+    position:relative;
+    left:580px;
+    top:140px;
+    background:white;
+    border-radius:10px;
+    padding:10px 60px;
+    width:400px;
+    height:500px;
+    flex-direction:column;
+    box-shadow:0 0 30px rgba(0,0,0,0.2)
+}
+#container-2 button{
+    position:relative;
+    top:100px;
+    right:125px;
+}
+textarea{
+    background:transparent;
+    outline:none;
+    border-radius:5px;
+    text-align:center;
+    transform:scale(1.5);
+    margin-bottom:70px;
+    position:relative;
+    top:40px;
+    cursor:pointer;
+}
+#encrypt-btn{
+    transform:translate(50px,128px) scale(2.4);
+
+}
+#copyToClipboard{
+    transform:translate(210px,109px) scale(2.4);
+}
+#encrypt-btn, #copyToClipboard{
+border:none;
+border-radius:2px;
+cursor:pointer;
+background:#3066f6;
+color:white;
+font-family:sans-serif;
+font-size:10px;
+padding:4px 12px;
+}
+#shiftInput{
+    transform:scale(2);
+    outline:none;
+    cursor:pointer;
+    border:1px solid grey;
+
+}
+#container-1{
+    background:white;
+    border-radius:10px;
+    padding:30px 60px;
+    width:400px;
+    height:50px;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+    transform:translate(580px, 100px);
+    font-family:Kenia, cursive;
+    font-size:15px;
+    cursor:pointer;
+}
+#container-1, #container-2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+#caesar{
+    width:111px;
+    border-radius:0px 10px 10px 0px;
+    position:relative;
+    left:60px;
+}
