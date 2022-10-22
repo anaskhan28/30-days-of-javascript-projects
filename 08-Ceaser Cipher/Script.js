@@ -23,23 +23,18 @@ let encryptBtn = document.getElementById('encrypt-btn')
         eInput.value = solved
         }
 
-        function copyText(){
-            eInput.select()
-            eInput.setSelectionRange(0,99999);
-            document.execCommand("copy");
-            alert("Copied to clipboard: "+ eInput.value);
-        }
-        copyBtn.addEventListener('click', copyText)
-        encryptBtn.addEventListener('click', encrypt) 
+        function decrypt(){
+            let eInput= document.getElementById('encryptedInput-1').value
+            let solved = ''
+            let shiftInput = parseInt(document.getElementById('shiftInput').value)
 
-        function copyText() {
-            eInput.select()
-            eInput.setSelectionRange(0,99999)
-            document.execCommand('copy')
-            alert(`Copied to clipboard: ${eInput.value}`)
-        }
-        copyBtn.addEventListener('click', copyText)
-        encryptBtn.addEventListener('click', encrypt)
-        
-        
+            for(var i =0; i<eInput.length; i++){
+                let ascii_num = eInput[i].charCodeAt()
+                let minus = ascii_num + shiftInput
+                minus >= 65 && minus <=90 ? solved += String.fromCharCode(minus) : minus > 90 ? solved += String.fromCharCode(65 - (minus % 91)) : solved -= eInput[i]    
+                       }
+        pInput.value = solved
+                    }
+        copyBtn.addEventListener('click', decrypt)
+        encryptBtn.addEventListener('click', encrypt) 
 
