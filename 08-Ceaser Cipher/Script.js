@@ -2,7 +2,7 @@ let encryptBtn = document.getElementById('encrypt-btn')
         let eInput= document.getElementById('encryptedInput-1')
         let pInput= document.getElementById('plainInput-1')
         let inputs = [eInput,pInput]
-        var copyBtn = document.getElementById('copyToClipBoard')
+        let decryptBtn = document.getElementById('decrypt-btn')
 
         inputs.forEach(input => {
             input.oninput = () => {
@@ -28,13 +28,13 @@ let encryptBtn = document.getElementById('encrypt-btn')
             let solved = ''
             let shiftInput = parseInt(document.getElementById('shiftInput').value)
 
-            for(var i =0; i<eInput.length; i++){
+            for(let i =0; i<eInput.length; i++){
                 let ascii_num = eInput[i].charCodeAt()
                 let minus = ascii_num + shiftInput
                 minus >= 65 && minus <=90 ? solved += String.fromCharCode(minus) : minus > 90 ? solved += String.fromCharCode(65 - (minus % 91)) : solved -= eInput[i]    
                        }
         pInput.value = solved
                     }
-        copyBtn.addEventListener('click', decrypt)
+        decryptBtn.addEventListener('click', decrypt)
         encryptBtn.addEventListener('click', encrypt) 
 

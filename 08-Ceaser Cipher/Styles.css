@@ -46,11 +46,11 @@ cursor:pointer;
 #encrypt-btn{
  transform:translate(50px,128px) scale(2.4);
 }
-#copyToClipBoard{
+#decrypt-btn{
     transform:translate(210px,110px) scale(2.4);
 
 }
-#encrypt-btn, #copyToClipBoard{
+#encrypt-btn, #decrypt-btn{
     border-radius:2px;
  border:none;
  cursor:pointer;
