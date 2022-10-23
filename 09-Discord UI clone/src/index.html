@@ -7,7 +7,7 @@
     <title>Discord Clone</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="text-white">
+<body class="text-white overflow-x-hidden">
     <!-- Header -->
     <header class="bg-primary">
         <div class="flex items-center justify-between container py-6">
@@ -69,22 +69,25 @@
     <main>
         <!-- hero section -->
         <section
-        class="relative bg-primary  bg-[url('/images/hero/1.svg')] bg-center">
-        <img src="images/hero/2.svg" alt=""class="absolute bottom-0 -left-56">
-        <img src="images/hero/3.svg" alt=""class="absolute bottom-0 -right-56">
+        class="relative bg-primary  bg-[url('images/hero/1.svg')] bg-no-repeat bg-center ">
+        <img src="images/hero/2.svg" alt=""class="absolute bottom-0 xl:-left-60 w-[65%] xl:w-[40%] block md:hidden xl:block">
+        <img src="images/hero/3.svg" alt=""class="absolute bottom-0 md:-right-0 xl:-right-56 md:-[95%] w-[40%] hidden md:block ">
 
-        <div class="flex flex-col gap-6 items-center justify-center h-[78vh] container">
-            <h1 class="text-6xl font-bold">IMAGINE A PLACE...</h1>
-            <p>
+        <div class="flex flex-col gap-8 items-start xl:items-center 
+        xl:justify-center h-[84vh] xl:h-[78vh] container pt-20 xl:pt-0">
+            <h1 class="text-3xl lg:text-4xl xl:text-6xl tracking-widest">IMAGINE A PLACE...</h1>
+            <p class="text-sm lg:text-lg xl:text-xl tracking-wider leading-normal">
                 ...where you can belong to a school club, 
-                a gaming group, or a worldwide art community. 
+                a gaming group, or a worldwide art community.<br> 
                 Where just you and a handful of friends can 
                 spend time together. A place that makes it easy 
-                to talk every day and hang out more often.
+                <br>to talk every day and hang out more often.
             </p>
-            <div class="flex items-center gap-5">
-                <button class="btn btn-white">Download for Windows</button>
-                <button class="btn btn-black">Open Discord in your browser</button>
+            <div class="flex flex-col xl:flex-row items-center gap-5">
+                <button class="btn btn-white flex items-center gap-x-1">
+                    <ion-icon name="download-outline" class="w-6 h-6"></ion-icon>
+                    Download for Windows</button>
+                <button class="btn btn-black ">Open Discord in your browser</button>
             </div>
         </div>
        

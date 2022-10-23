@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Base Style */
+@layer base{
+    h1,h2,h3{
+        @apply font-bold font-blackhans;
+    }
+    body{
+        @apply font-opensans;
+    }
+}
+
+/* Components Style */
 @layer components{
     .navLink{
         @apply hover:underline font-semibold;
@@ -9,7 +22,7 @@
 
     .btn-sm{
         @apply bg-white py-2 px-4 text-black
-        text-lg rounded-3xl font-medium hover:text-primary hover:shadow-lg
+         rounded-3xl font-medium hover:text-primary hover:shadow-lg
         hover:shadow-black/50 transition duration-300;
     }
     .btn{
@@ -17,9 +30,10 @@
                 transition duration-200;
     }
     .btn-white{
-        @apply bg-white text-black;
+        @apply bg-white text-black hover:text-primary;
     }
     .btn-black{
-        @apply bg-black text-white;
+        @apply bg-black text-white hover:bg-gray-700;
     }
+
 }
